@@ -26,3 +26,22 @@ By completing this project, you will:
 ## Folder Structure
 
 # alx-airbnb-database
+
+---
+
+## Technology Stack
+- **Database:** Relational database concepts
+- **Tools:** Draw.io, Mermaid, Git & GitHub
+- **Languages:** SQL (conceptual, not implemented here)
+
+---
+
+## ER Diagram
+
+The ER Diagram (Mermaid format) is located in:  
+`ERD/requirements.md`
+
+## How to Use
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/mouradpy/alx-airbnb-database.git
