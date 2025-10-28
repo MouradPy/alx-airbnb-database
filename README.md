@@ -45,3 +45,14 @@ The ER Diagram (Mermaid format) is located in:
 1. Clone the repository:
    ```bash
    git clone https://github.com/mouradpy/alx-airbnb-database.git
+   
+**Think of it like this:**
+- **ONE** `README.md` file in the **main folder**
+- Contains **ALL** the sections together
+- The "Technology Stack", "ER Diagram", and "How to Use" sections are just **parts** of the complete README
+
+**To fix this right now:**
+
+1. Open your complete `README.md` file:
+   ```cmd
+   code README.md
