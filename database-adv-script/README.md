@@ -160,3 +160,12 @@ The queries assume the following tables exist:
 - Subqueries can impact performance; consider JOIN alternatives for large datasets
 
 ## File Structure
+### 4. Database Optimization Files
+- **`database_index.sql`**: SQL commands to create performance-optimizing indexes
+- **`index_performance.md`**: Documentation on index strategy and performance measurement
+
+**Key Indexing Strategies:**
+- Unique indexes for authentication (email)
+- Composite indexes for search patterns (location, price)
+- Foreign key indexes for JOIN performance
+- Date-based indexes for temporal queries
