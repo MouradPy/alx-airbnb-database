@@ -1,88 +1,33 @@
-\# Complex SQL Joins - Airbnb Database
+# SQL Join Queries
 
+This folder contains advanced SQL join queries for the Airbnb database project.
 
+## Queries Included
 
-This repository contains complex SQL queries demonstrating different types of joins for an Airbnb-like database system.
+### 1. INNER JOIN: Retrieve all bookings with their respective users
 
+* Only returns bookings that have a matching user.
 
+### 2. LEFT JOIN: Retrieve all properties and their reviews
 
-\## Queries Overview
+* Returns all properties, including those with **no reviews**.
 
+### 3. FULL OUTER JOIN: Retrieve all users and all bookings
 
+* Returns all users and bookings, even if **no match exists** on either side.
 
-\### 1. INNER JOIN Query
+## How to Run
 
-\*\*Purpose\*\*: Retrieve all bookings along with the users who made them.
+You can run the queries using any SQL client, such as:
 
-\- Shows only records where there's a match in both `bookings` and `users` tables
+* **MySQL**
+* **PostgreSQL**
+* **SQLite**
 
-\- Useful for getting complete booking information with user details
+Example (PostgreSQL):
 
+```bash
+psql -U your_username -d airbnb_db -f joins_queries.sql
+```
 
-
-\### 2. LEFT JOIN Query  
-
-\*\*Purpose\*\*: Retrieve all properties and their reviews, including properties without any reviews.
-
-\- Returns all properties regardless of whether they have reviews
-
-\- Properties without reviews will have NULL values in review-related columns
-
-\- Essential for displaying property listings with optional review data
-
-
-
-\### 3. FULL OUTER JOIN Query
-
-\*\*Purpose\*\*: Retrieve all users and all bookings, including unmatched records from both sides.
-
-\- Shows users without bookings AND bookings without associated users
-
-\- Uses UNION of LEFT and RIGHT JOINs for MySQL compatibility
-
-\- Important for data analysis and identifying orphaned records
-
-
-
-\## Database Schema Assumptions
-
-
-
-The queries assume the following tables exist:
-
-\- `users` (user\_id, first\_name, last\_name, email, ...)
-
-\- `properties` (property\_id, title, price\_per\_night, host\_id, ...)  
-
-\- `bookings` (booking\_id, user\_id, property\_id, check\_in\_date, check\_out\_date, total\_price, status, ...)
-
-\- `reviews` (review\_id, property\_id, user\_id, rating, comment, created\_at, ...)
-
-
-
-\## Usage
-
-
-
-1\. Execute the queries in your SQL database management tool
-
-2\. Modify table/column names to match your actual schema
-
-3\. Use these patterns as templates for your own complex join queries
-
-
-
-\## Notes
-
-
-
-\- The FULL OUTER JOIN implementation uses UNION since MySQL doesn't natively support FULL OUTER JOIN
-
-\- Always test queries with your specific database schema
-
-\- Consider adding indexes on foreign key columns for better performance
-
-
-
-\## File Structure
-
+Make sure your tables (`users`, `bookings`, `properties`, `reviews`) already exist before running the queries.
