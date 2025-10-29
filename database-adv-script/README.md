@@ -169,3 +169,13 @@ The queries assume the following tables exist:
 - Composite indexes for search patterns (location, price)
 - Foreign key indexes for JOIN performance
 - Date-based indexes for temporal queries
+### 5. Query Optimization Files
+- **`perfomance.sql`**: Initial and optimized queries with EXPLAIN ANALYZE performance measurements
+- **`optimization_report.md`**: Comprehensive analysis of query performance improvements
+
+**Optimization Techniques Applied:**
+- Column selection reduction
+- JOIN optimization and subquery usage
+- Strategic indexing
+- Data filtering and pagination
+- Query restructuring with CTEs
