@@ -179,3 +179,12 @@ The queries assume the following tables exist:
 - Strategic indexing
 - Data filtering and pagination
 - Query restructuring with CTEs
+### 6. Table Partitioning Files
+- **`partitioning.sql`**: SQL commands to implement table partitioning on bookings table
+- **`partition_performance.md`**: Performance analysis and improvement report
+
+**Partitioning Strategy:**
+- RANGE partitioning on `check_in_date` column
+- Monthly partitions for better query performance
+- Partition pruning for date-range queries
+- Maintenance operations for partition management
