@@ -188,3 +188,26 @@ The queries assume the following tables exist:
 - Monthly partitions for better query performance
 - Partition pruning for date-range queries
 - Maintenance operations for partition management
+### 7. Performance Monitoring Files
+- **`performance_monitoring.md`**: Comprehensive database performance analysis, optimization strategies, and continuous monitoring recommendations
+
+**Performance Monitoring Techniques:**
+- EXPLAIN ANALYZE for query execution analysis
+- SHOW PROFILE for detailed timing information
+- Index usage monitoring and optimization
+- Schema adjustments for performance improvement
+- Continuous monitoring strategies
+
+## Complete Database Optimization Suite
+
+This repository now contains a comprehensive set of database optimization techniques:
+
+1. **Complex Joins** - Advanced relationship queries
+2. **Subqueries** - Correlated and non-correlated subqueries  
+3. **Aggregations & Window Functions** - Data analysis and ranking
+4. **Index Optimization** - Strategic indexing for performance
+5. **Query Optimization** - Refactoring complex queries
+6. **Table Partitioning** - Managing large datasets
+7. **Performance Monitoring** - Continuous optimization strategies
+
+Each technique includes practical implementations, performance measurements, and real-world optimization strategies for scalable database management.
